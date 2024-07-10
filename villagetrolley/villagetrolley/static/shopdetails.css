@@ -1,0 +1,94 @@
+.shopproductsection {
+    padding:25px;
+    background: linear-gradient(to bottom left, #EBDEF0, #A9CCE3, #A3E4D7,#ABEBC6,#EDBB99);
+}
+
+.shopproductsectionbox {
+   width:1190px;
+   height:600px;
+   margin:0 auto;
+   border-radius:8px;
+   display:flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content:center;
+   background: linear-gradient(to bottom right, #B4C424, #8A9A5B, #009E60);
+}
+
+.spshead {
+ padding:20px;
+ font-size:33px;
+ color:#0000FF;
+}
+
+.pdbox {
+  border: 2px solid #D35400;
+  font-size:25px;
+  width:800px;
+  height:30px;
+  padding:10px;
+  white-space: pre;
+  font-family:Luminari;
+  color:white;
+}
+
+
+.input-field {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+  font-size: 20px;
+  width: 50px;
+  outline: none;
+}
+
+.submit-button {
+  background-color: #138808;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  font-size: 22px;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: black;
+}
+
+.input-field {
+ padding:25px;
+}
+
+.KMDIseccont {
+    padding:30px;
+    margin:0 auto;
+    display:flex;
+    justify-content:center;
+    flex-direction: column;
+    align-items:center;
+    font-size:27px;
+    font-family:Optima;
+}
+
+.KMDIlist {
+list-style:none;
+line-height: 1.5;
+color:black;
+}
+
+.KMDIsec {
+background-image: linear-gradient(38.73deg, rgba(204, 0, 187, 0.25) 0%, rgba(201, 32, 184, 0) 50%), linear-gradient(141.27deg, rgba(0, 70, 209, 0) 50%, rgba(0, 70, 209, 0.25) 100%);
+}
+
+.KMIDhead {
+  color: #FF5F1F;
+}
+.FSObox1 {
+  color:#5D3FD3;
+}
+
+/*  ********************************************************************** */
+/* Shop Product Details */
+/* *********************************************************************** */

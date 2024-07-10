@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% load static %}
+{% block css %}
+    <!-- Link to home-specific CSS -->
+    <link rel="stylesheet" href="{% static 'dailymonthlydata.css' %}">
+{% endblock css%}
+{% block content %}
+
+<section class="DMSPsec">
+    <h1 class="DMASCH">SHOP NAME / CUSTOMER NAME</h1>
+    <div class="DMSPbox">
+       <div class="daily">
+          <h2 class="DSPBH"><u>Daily Selling Products</u></h2>
+          <h5 class="DSPH"> <u><i>   Product Name          Quantity         Price</u></i></h5>
+         <p class="DSPP">  Sunflower Oil          10         ₹ 140 </p>
+         <p class="DSPP">  Sunflower Oil          10         ₹ 140 </p>
+         <p class="DSPP">  Sunflower Oil          10         ₹ 140 </p>
+         <p class="DSPP">  Sunflower Oil          10         ₹ 140 </p>
+         <p class="DSPP">  Sunflower Oil          10         ₹ 140 </p>
+       </div>
+       <div class="monthly">
+          <h2 class="MSPBH"><u>Monthly Selling Products</u></h2>
+          <h5 class="MSPH"> <u><i>   Product Name           Quantity          Price</u></i></h5>
+          <p class="MSPP">   Sunflower Oil          10          ₹ 140 </p>
+          <p class="MSPP">   Sunflower Oil          10          ₹ 140 </p>
+          <p class="MSPP">   Sunflower Oil          10          ₹ 140 </p>
+          <p class="MSPP">   Sunflower Oil          10          ₹ 140 </p>
+          <p class="MSPP">   Sunflower Oil          10          ₹ 140 </p>
+       </div>
+    </div>
+ </section>
+
+ {% endblock %}

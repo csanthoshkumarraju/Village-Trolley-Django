@@ -1,0 +1,58 @@
+.DMSPsec {
+    padding:30px;
+    background: linear-gradient(to bottom right, #CCCCFF, #C3B1E1, #E0B0FF);
+    
+}
+
+.DMSPbox {
+   width:1200px;
+   margin:0 auto;
+   height:700px;
+   background: rgba( 165, 6, 232, 0.2 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 2px );
+-webkit-backdrop-filter: blur( 2px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );  
+}
+
+.DMSPbox {
+ display: grid;
+ grid-template-columns: 1fr 1fr; 
+ gap: 20px;
+ font-family:Bradley Hand;
+}
+
+.daily, .monthly {
+ flex-direction: column;
+ align-items:center;
+ padding: 30px;
+ display:flex;
+ justify-content:center;
+ 
+}
+
+.DSPH , .MSPH{
+   white-space:pre;
+   font-size:28px;
+   color:blue;
+}
+.DSPP, .MSPP {
+ white-space:pre;
+ font-size:26px;
+ color:white;
+ border: 1.5px solid #800080;
+}
+
+.DSPBH, .MSPBH {
+    font-size:34px;
+    color:#FF5733;
+}
+
+.DMASCH {
+ color:#FF1493;
+ padding:15px;
+ margin-left:500px;
+ font-family:Verdana;
+}
+

@@ -1,0 +1,48 @@
+
+{% load static %}
+
+{% block css %}
+    <!-- Link to home-specific CSS -->
+    <link rel="stylesheet" href="{% static 'nav.css' %}">
+{% endblock css%}
+
+<section>
+<nav class="navbar navbar-custom">
+    <div class="VT_logo">
+        <img src="{% static 'fotor-2024062021484.png' %}" style="width: 70px; height: 70px;" alt="VT Logo">
+    </div>
+    
+    <div class="navbar-title">
+      
+      <span style="font-weight: bold; 
+            background: linear-gradient(to right, #F6FF00,#ff3737,purple); 
+            -webkit-background-clip: text; 
+            color: transparent;
+            font-family: 'Playfair Display', serif; font-style: italic; ">
+    Village Trolley
+</span>
+           
+         
+    </div>
+    <div class="navbar-links">
+        <a href="#">Home</a>
+        <a href="#">Add Items</a>
+        <a href="#">Bill Items</a>
+        <a href="#">Analytics</a>
+        <a href="#">Language</a>
+        <a href="#">Nearby Stores</a>
+    </div>
+    <div class="user-section">
+        <div class="user-info">
+            <h2 class="W">Welcome guest!</h2>
+            <div class="login-register">
+                <a class= "L" href="#">Login</a>
+                <span>|</span>
+                <a class= "R" href="#">Register</a>
+            </div>
+        </div>
+        <i class="fa fa-circle-user"></i>
+    </div>
+</nav>
+
+</section>
