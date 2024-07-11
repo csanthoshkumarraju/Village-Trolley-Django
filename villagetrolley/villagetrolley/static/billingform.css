@@ -69,12 +69,15 @@
     width: 100%;
     border-collapse: collapse;
     margin-bottom: 20px;
+    
 }
 
 .billtable th, .billtable td {
     border: 1px solid #dddddd;
     text-align: left;
     padding: 10px;
+   
+    
 }
 
 .billtable th {
@@ -102,6 +105,7 @@
     text-align: center; /* Center align text */
     display: inline-block; /* Ensures inline-block behavior */
     width: auto; /* Adjust width as needed */
+    font-family:Helvetica;
 }
 
 .total-section div {

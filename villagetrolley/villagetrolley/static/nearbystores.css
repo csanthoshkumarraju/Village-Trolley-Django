@@ -40,8 +40,8 @@
   }
   
   .product-search1 {
-     width: calc(100% - 40px);
-     padding: 10px 40px 10px 10px;
+     width: 200px;
+     padding: 10px 10px 10px 10px;
      font-size: 14px;
      border: 1px solid #ccc;
      border-radius: 5px;
@@ -50,8 +50,8 @@
   
   .search-button1 {
      position: absolute;
-     margin-right: 190px;
-     top: 5.5px;
+     margin-right: 100px;
+     top: 5px;
      padding: 10px;
      background-color: #4CAF50;
      border: none;

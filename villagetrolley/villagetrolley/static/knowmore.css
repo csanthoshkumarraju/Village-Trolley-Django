@@ -7,6 +7,7 @@
     align-items:center;
     font-size:27px;
     font-family:Optima;
+    
 }
 
 .KMDIlist {
@@ -16,8 +17,9 @@ color:black;
 }
 
 .KMDIsec {
-background-image: linear-gradient(38.73deg, rgba(204, 0, 187, 0.25) 0%, rgba(201, 32, 184, 0) 50%), linear-gradient(141.27deg, rgba(0, 70, 209, 0) 50%, rgba(0, 70, 209, 0.25) 100%);
+  background: linear-gradient(to bottom left, #B9D9EB, #6082B6, #B0C4DE, #D8BFD8, #D8BFD8);
 }
+
 
 .KMIDhead {
   color: #FF5F1F;
