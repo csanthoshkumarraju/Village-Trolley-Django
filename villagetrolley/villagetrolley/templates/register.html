@@ -63,8 +63,11 @@
                <input type="password" id="passwd" name="passwd" placeholder="Enter Your Password">
            </div>
        </form>
+
       <button type="button" class="join-button">Join Us</button>
-      <p class="rloginp">Already have an account. Please <a href="url" class="ralogin-link">Login</a></p>
+      <p class="rloginp">Already have an account. Please <a href="{% url 'login' %}" class="ralogin-link">Login</a></p>
     </div>
  </section>
  {% endblock  %}
+
+
