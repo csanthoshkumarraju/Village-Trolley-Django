@@ -17,6 +17,9 @@ urlpatterns = [
     path('daily_monthly_data', views.daily_monthly_data, name='daily_monthly_data'),
     path('resetpwd', views.resetpwd, name='resetpwd'),
     path('custdmhist', views.custdmhist, name='custdmhist'),
+    path('customer_register', views.customer_register, name='customer_register'),
+    path('customer_login', views.customer_login, name='customer_login'),
+    path('common_reg_login', views.common_reg_login, name='common_reg_login'),
  
 ]
 

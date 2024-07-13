@@ -48,3 +48,10 @@ def custdmhist(request):
     return render(request,'customerdailymonthlydata.html')
 
 
+def customer_register(request):
+    return render(request, 'customerregister.html')
+
+def customer_login(request):
+    return render(request, 'customerlogin.html')
+def common_reg_login(request):
+    return render(request, 'commonreglogin.html')
