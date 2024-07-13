@@ -33,7 +33,7 @@ height: auto;
  justify-content:center;
  
 }
-
+ 
 .DSPH , .MSPH{
    white-space:pre;
    font-size:28px;
@@ -56,5 +56,6 @@ height: auto;
  padding:15px;
  margin-left:500px;
  font-family:Verdana;
+ text-align: center;
 }
 
