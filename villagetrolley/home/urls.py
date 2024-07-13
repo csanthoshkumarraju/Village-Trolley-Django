@@ -15,6 +15,7 @@ urlpatterns = [
     path('knowmore', views.knowmore, name='knowmore'),
     path('daily_monthly_data', views.daily_monthly_data, name='daily_monthly_data'),
     path('resetpwd', views.resetpwd, name='resetpwd'),
+    path('custdmhist', views.custdmhist, name='custdmhist'),
 ]
 
 

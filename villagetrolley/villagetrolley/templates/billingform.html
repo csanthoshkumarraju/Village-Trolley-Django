@@ -11,7 +11,9 @@
 <section class="billing_section">
     <div class="billing_box">
         <h6 class="billingbox_guide"><marquee class="bgmar" scrollamount="2">Enter all billing items individually using the search option. After entering all items, click 'Bill'.</marquee></h6>
-        <button class="bill-button2">Low Stock Products</button>
+        {% comment %} <button class="bill-button2">Low Stock Products</button> {% endcomment %}
+        <button class="bill-button2" onclick="window.location.href='/lowstockproducts'">Low Stock Products</button>
+
         <div class="search-container">
             
             <input type="text" id="productNameSearch" class="product-search" placeholder="Find the product">

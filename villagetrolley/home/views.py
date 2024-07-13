@@ -37,3 +37,6 @@ def daily_monthly_data(request):
 
 def resetpwd(request):
     return render(request,'resetpassword.html')
+
+def custdmhist(request):
+    return render(request,'customerdailymonthlydata.html')
