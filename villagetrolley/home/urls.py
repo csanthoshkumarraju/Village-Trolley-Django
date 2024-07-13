@@ -1,7 +1,8 @@
 # myapp/urls.py
-from django.urls import path
+from django.urls import path,include
+
 from . import views
- 
+from django.views.i18n import set_language
 urlpatterns = [
     path('', views.home, name='home'),
     path('register', views.register, name='register'),
@@ -16,6 +17,7 @@ urlpatterns = [
     path('daily_monthly_data', views.daily_monthly_data, name='daily_monthly_data'),
     path('resetpwd', views.resetpwd, name='resetpwd'),
     path('custdmhist', views.custdmhist, name='custdmhist'),
+ 
 ]
 
 

@@ -1,10 +1,11 @@
 .lowstockproducts {
     padding:25px;
+    height: auto;
     background: linear-gradient(to bottom right, #702963, #811331,#814141, #FF003F);
 }
 .lowstockbox {
    width:900px;
-   height:600px;
+   height: auto;
    margin:0 auto;
    border-radius:8px;
    background: linear-gradient(to bottom right, #C1E1C1, #4FB1C1, #ADD8E6);

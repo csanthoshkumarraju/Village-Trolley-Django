@@ -1,6 +1,12 @@
 from django.shortcuts import render
 from django.http import HttpResponse
- 
+from django.shortcuts import redirect
+from django.utils.translation import activate
+from django.utils import translation
+from django.utils.translation import activate
+from django.conf import settings
+# Assuming you have determined the language_code somehow
+
 def home(request):
     return render(request, 'home.html')
     
@@ -40,3 +46,5 @@ def resetpwd(request):
 
 def custdmhist(request):
     return render(request,'customerdailymonthlydata.html')
+
+

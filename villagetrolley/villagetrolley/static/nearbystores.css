@@ -8,6 +8,7 @@
      padding: 25px;
      background: linear-gradient(to bottom right, #7FB3D5, #27AE60, #154360);
      text-align: center;
+     height:auto;
   }
   
   .nearby_box {

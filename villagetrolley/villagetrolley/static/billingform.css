@@ -3,6 +3,7 @@
     background-color: #FF00BF;
     background: linear-gradient(to bottom right, #FF00BF 0%, #007FFF 50%, #FF5733 100%);
     text-align: center; /* Center content horizontally */
+    height:auto;
 }
 
 .billingbox_guide {
@@ -23,6 +24,7 @@
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
     padding: 20px;
     box-sizing: border-box;
+    height:auto;
 }
 
 .bgmar {

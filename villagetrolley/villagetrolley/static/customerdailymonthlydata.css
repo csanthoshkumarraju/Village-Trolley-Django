@@ -1,6 +1,7 @@
 .DMSPsec {
     padding:30px;
     background: linear-gradient(to bottom right, #CCCCFF, #C3B1E1, #E0B0FF);
+    height: auto;
     
 }
 
@@ -13,7 +14,8 @@ box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
 backdrop-filter: blur( 2px );
 -webkit-backdrop-filter: blur( 2px );
 border-radius: 10px;
-border: 1px solid rgba( 255, 255, 255, 0.18 );  
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+height: auto;  
 }
 
 .DMSPbox {
@@ -26,7 +28,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 .daily, .monthly {
  flex-direction: column;
  align-items:center;
- padding: 30px;
+ padding: 10px;
  display:flex;
  justify-content:center;
  

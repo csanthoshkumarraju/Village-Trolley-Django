@@ -1,11 +1,12 @@
 .shopproductsection {
   padding: 25px;
+  height: auto;
   background: linear-gradient(to bottom left, #EBDEF0, #A9CCE3, #A3E4D7, #ABEBC6, #EDBB99);
 }
 
 .shopproductsectionbox {
   width: 1190px;
-  height: 800px;
+  height: auto;
   margin: 0 auto;
   border-radius: 8px;
   display: flex;

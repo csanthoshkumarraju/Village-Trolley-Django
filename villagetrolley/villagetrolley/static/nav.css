@@ -2,11 +2,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* padding: 10px; */
     background-color: #0077c0;
     color: white;
+    padding: 10px; 
 }
-
 
 .navbar-title {
     font-size: 40px;
@@ -19,58 +18,72 @@
     color: transparent;
 }
 
-.navbar-links a {
-    margin-right: 13px;
-    text-decoration: underline;
-    color: inherit;
-    font-size: 22px;
-}
-.navbar-links a:hover {
-  color: #000000; 
+.navbar-links {
+    display: flex;
+    align-items: center; /* Align navbar links vertically */
 }
 
-.W {
-  color:#FEBE10;
+.navbar-links a {
+    margin-right: 15px;
+    text-decoration: none; /* Removed underline */
+    color: white; /* Use white for link color */
+    font-size: 22px;
+}
+
+.navbar-links a:hover {
+    color: #000000; 
 }
 
 .user-section {
     display: flex;
-    align-items: flex-start; /* Align items to the top */
+    align-items: center; /* Align items vertically */
 }
 
 .user-info {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: flex-start; /* Align user info text to the left */
 }
 
 .user-info h2 {
-    margin: 0; /* Remove default margin of h2 */
+    margin: 0; /* Remove default margin */
 }
 
 .login-register {
     display: flex;
     align-items: center;
-    margin-top: 5px; /* Adjust spacing between "Welcome guest!" and "Login | Register" */
+    margin-top: 5px;
 }
 
 .login-register a {
-    text-decoration: underline;
-    color: black;
-   font-size:21px;
+    text-decoration: none; /* Removed underline */
+    color: white; /* Use white for link color */
+    font-size: 21px;
 }
+
 .login-register a:hover {
-  color: white; 
+    color: black; /* Change hover color */
 }
+
 .login-register span {
     margin: 0 5px;
 }
 
 .fa-circle-user {
     font-size: 51px;
-    color: black;
+    color: white; /* Use white for icon color */
     margin-left: 10px;
     margin-top: 3px;
-/*     align: center; */
 }
 
+/* Adjustments for mobile responsiveness */
+@media (max-width: 768px) {
+    .navbar-custom {
+        flex-direction: column; /* Stack elements vertically on small screens */
+        align-items: flex-start;
+    }
+
+    .navbar-links {
+        margin-top: 10px; /* Adjust margin between navbar sections */
+    }
+}
