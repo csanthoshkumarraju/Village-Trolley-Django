@@ -11,6 +11,19 @@
 
 {% block content %}
 
+<section class="Notesec">
+  <div id="note" class="note">
+      <span class="note-text">Note:- Please Use desktop version for better experience.</span>
+      <button class="close-btn" onclick="closeNote()"><i class="fa-solid fa-circle-xmark"></i></button>
+  </div>
+
+  <script>
+      function closeNote() {
+          document.getElementById('note').style.display = 'none';
+      }
+  </script>
+</section>
+
 <section class="mainpage">
     <div class="home_page">
         <div class="shopbox">

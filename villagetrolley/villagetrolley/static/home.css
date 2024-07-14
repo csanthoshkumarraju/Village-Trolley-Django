@@ -55,7 +55,7 @@
 .FSOlist li {
     color: #191970; 
 /*    #033165  */
-    line-height: 1;
+    line-height: 1.2;
     font-size: 22px;
     font-family: Georgia;
     margin-right:50px;
@@ -192,3 +192,41 @@
   cursor: pointer;
 }
 
+/* Basic reset and styling */
+.Notesec {
+  margin: 0;
+  
+}
+
+.note {
+  background-color: #F9F6EE;
+  color: red;
+  padding: 10px;
+  /* border-radius: 5px; */
+  position: relative;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+  font-size:25px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.note-text {
+  display: inline-block;
+  margin-right: 40px; 
+}
+
+.close-btn {
+  background: transparent;
+  border: none;
+  color: red;
+  font-size: 20px;
+  position: absolute;
+  right: 40px;
+  top: 11px;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  color: darkred;
+}
