@@ -13,7 +13,9 @@
     display: grid;
     grid-gap: 25px;
     grid-template-columns: repeat(3, 410px);
-    grid-template-rows: 370px 370px;
+    /* grid-template-rows: 370px 370px; */
+    /* added a line below */
+    grid-auto-rows: auto;
     justify-content: center; /* Center grid items horizontally */
   }
   
@@ -28,7 +30,8 @@
   /*   background-color: #f0f0f0; */
     background: linear-gradient(to bottom right, #4B0082,#FF69B4,#E30B5C);
     width: 410px;
-    height: 370px;
+    height: auto;  
+    /* changeed height. */
     font-family: American Typewriter; 
   }
   

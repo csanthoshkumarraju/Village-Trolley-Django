@@ -94,7 +94,7 @@ label {
 .join-button {
        color:#0cf574;
        background-color:#282C35;
-       width:150px;
+       width:auto;
        height:50px;
        font-family: "Times New Roman", Times, serif;
        font-size:30px;

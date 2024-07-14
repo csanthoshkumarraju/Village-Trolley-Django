@@ -1,6 +1,8 @@
 .home_page {
   background-color: #ADBBDA;
   min-height: 100vh;
+  /* adding max height */
+  max-height: auto;
 }
 .shopbox{
   width:560px; 
