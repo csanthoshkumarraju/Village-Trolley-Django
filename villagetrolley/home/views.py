@@ -55,3 +55,5 @@ def customer_login(request):
     return render(request, 'customerlogin.html')
 def common_reg_login(request):
     return render(request, 'commonreglogin.html')
+def cust_reset_pwd(request):
+    return render(request, 'customerrestpwd.html')

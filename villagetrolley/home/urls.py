@@ -20,6 +20,7 @@ urlpatterns = [
     path('customer_register', views.customer_register, name='customer_register'),
     path('customer_login', views.customer_login, name='customer_login'),
     path('common_reg_login', views.common_reg_login, name='common_reg_login'),
+    path('cust_reset_pwd', views.cust_reset_pwd, name='cust_reset_pwd'),
  
 ]
 
