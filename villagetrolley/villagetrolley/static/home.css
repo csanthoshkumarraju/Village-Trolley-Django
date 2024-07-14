@@ -1,4 +1,7 @@
-
+.home_page {
+  background-color: #ADBBDA;
+  min-height: 100vh;
+}
 .shopbox{
   width:560px; 
   float:left; 
