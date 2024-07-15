@@ -62,46 +62,44 @@
 
   <script>
     function updateTime() {
-        // Create a new Date object for current time
-        var currentTime = new Date();
-    
-        // Calculate IST offset in minutes (UTC +5:30)
-        var ISTOffset = 330;
-    
-        // Calculate IST time using the provided method
-        var ISTTime = new Date(currentTime.getTime() + (ISTOffset + currentTime.getTimezoneOffset()) * 60000);
-    
-        // Extract components of IST time
-        var hours = ISTTime.getHours();
-        var minutes = ISTTime.getMinutes();
-        var seconds = ISTTime.getSeconds();
-        var ampm = hours >= 12 ? 'PM' : 'AM';
-    
-        // Convert hours from 24-hour to 12-hour format
-        hours = hours % 12;
-        hours = hours ? hours : 12; // the hour '0' should be '12'
-    
-        // Ensure minutes and seconds are two digits
-        minutes = (minutes < 10 ? '0' : '') + minutes;
-        seconds = (seconds < 10 ? '0' : '') + seconds;
-    
-        // Build the time string in 12-hour format with AM/PM
-        var timeString = hours + ':' + minutes + ':' + seconds + ' ' + ampm;
-    
-        // Build the date string in DD/MM/YYYY format
-        var dateString = ISTTime.toLocaleDateString('en-IN');
-    
-        // Update the HTML elements
-        document.getElementById('current-time').textContent = 'Time : ' + timeString;
-        document.getElementById('current-date').textContent = 'Date : ' + dateString;
-    }
-    
-    // Call updateTime function initially to avoid delay
-    updateTime();
-    
-    // Update the time every second
-    setInterval(updateTime, 1000);
-    
+      // Create a new Date object for current time
+      var currentTime = new Date();
+  
+      // Calculate IST offset in minutes (UTC +5:30)
+      var ISTOffset = 330;
+  
+      // Calculate IST time using the provided method
+      var ISTTime = new Date(currentTime.getTime() + (ISTOffset + currentTime.getTimezoneOffset()) * 60000);
+  
+      // Extract components of IST time
+      var hours = ISTTime.getHours();
+      var minutes = ISTTime.getMinutes();
+      var ampm = hours >= 12 ? 'PM' : 'AM';
+  
+      // Convert hours from 24-hour to 12-hour format
+      hours = hours % 12;
+      hours = hours ? hours : 12; // the hour '0' should be '12'
+  
+      // Ensure minutes are two digits
+      minutes = (minutes < 10 ? '0' : '') + minutes;
+  
+      // Build the time string in 12-hour format with AM/PM
+      var timeString = hours + ':' + minutes + ' ' + ampm;
+  
+      // Build the date string in DD/MM/YYYY format
+      var dateString = ISTTime.toLocaleDateString('en-IN');
+  
+      // Update the HTML elements
+      document.getElementById('current-time').textContent = 'Time : ' + timeString;
+      document.getElementById('current-date').textContent = 'Date : ' + dateString;
+  }
+  
+  // Call updateTime function initially to avoid delay
+  updateTime();
+  
+// Update time every minute (60000 milliseconds)
+setInterval(function() { updateTime(); }, 60000);
+
     </script>
     
     <script>
