@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'home',
+    'customers',
     'django.contrib.humanize',  
     'django.contrib.sites',  
     'django.contrib.flatpages',  
