@@ -40,8 +40,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'home',
     'customers',
+    'shopowners',
     'django.contrib.humanize',  
-    'django.contrib.sites',  
+    'django.contrib.sites', 
     'django.contrib.flatpages',  
     'django.contrib.redirects',
     'django.contrib.sitemaps',
@@ -140,3 +141,4 @@ MEDIA_URL = '/villagetrolley/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR,'villagetrolley', 'media')
 
 
+SITE_ID = 1

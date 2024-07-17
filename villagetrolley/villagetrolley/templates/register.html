@@ -12,63 +12,81 @@
 <section class="SORegister">
     <div class="SORBox">
         <h2 class="SORH">Shop Owner Registration</h2>
-       <form>
-           <div class="form-group">
-               <label for="fname">First Name :</label>
-               <input type="text" id="fname" name="fname" placeholder="First name">
-           </div>
-           <div class="form-group">
-               <label for="lname">Last Name :</label>
-               <input type="text" id="lname" name="lname" placeholder="Last name">
-           </div>
-         
-           <div class="form-group">
-               <label for="lname">Shop Name :</label>
-               <input type="text" id="lname" name="lname" placeholder="Shop name">
-           </div>
-          <div class="form-group">
-               <label for="email">Mail Id :</label>
-               <input type="email" id="email" name="email" placeholder="Email ID">
-           </div>
-           <div class="form-group">
-               <label for="pno">Phone Number :</label>
-               <input type="tel" id="pno" name="pno" placeholder="10 digit Phone Number">
-           </div>
-           
-           <div class="form-group">
-               <label for="ast">Street Address :</label>
-               <input type="text" id="ast" name="ast" placeholder="Street Address ">
-           </div>
-           <div class="form-group">
-               <label for="village">Village :</label>
-               <input type="text" id="village" name="village" placeholder="Village name">
-           </div>
-           <div class="form-group">
-               <label for="mandal">Mandal :</label>
-               <input type="text" id="mandal" name="mandal" placeholder="Mandal name">
-           </div>
-           <div class="form-group">
-               <label for="city">City :</label>
-               <input type="text" id="city" name="city" placeholder="City Name">
-           </div>
-           <div class="form-group">
-               <label for="state">State :</label>
-               <input type="text" id="state" name="state" placeholder="State Name">
-           </div>
-           <div class="form-group">
-               <label for="pc">Pin Code :</label>
-               <input type="number" id="pc" name="pc" placeholder="Pin Code">
-           </div>
-           <div class="form-group">
-               <label for="passwd">Password :</label>
-               <input type="password" id="passwd" name="passwd" placeholder="Enter Your Password">
-           </div>
-       </form>
-
-      <button type="button" class="join-button">Join Us</button>
-      <p class="rloginp">Already have an account. Please <a href="{% url 'login' %}" class="ralogin-link">Login</a></p>
-    </div>
+       <form method="post">
+        {% csrf_token %}
+        <div class="form-group">
+            <label for="id_first_name">First Name:</label>
+            {{ form.first_name }}
+            {{ form.first_name.errors }}
+        </div>
+        <div class="form-group">
+            <label for="id_last_name">Last Name:</label>
+            {{ form.last_name }}
+            {{ form.last_name.errors }}
+        </div>
+        <div class="form-group">
+            <label for="id_shop_name">Shop Name:</label>
+            {{ form.shop_name }}
+            {{ form.shop_name.errors }}
+        </div>
+        <div class="form-group">
+            <label for="id_mail_id">Mail ID:</label>
+            {{ form.mail_id }}
+            {{ form.mail_id.errors }}
+        </div>
+        <div class="form-group">
+            <label for="id_phone_number">Phone Number:</label>
+            {{ form.phone_number }}
+            {{ form.phone_number.errors }}
+        </div>
+        <div class="form-group">
+            <label for="id_street_address">Street Address:</label>
+            {{ form.street_address }}
+            {{ form.street_address.errors }}
+        </div>
+        <div class="form-group">
+            <label for="id_village">Village:</label>
+            {{ form.village }}
+            {{ form.village.errors }}
+        </div>
+        <div class="form-group">
+            <label for="id_mandal">Mandal:</label>
+            {{ form.mandal }}
+            {{ form.mandal.errors }}
+        </div>
+        <div class="form-group">
+            <label for="id_city">City:</label>
+            {{ form.city }}
+            {{ form.city.errors }}
+        </div>
+        <div class="form-group">
+            <label for="id_state">State:</label>
+            {{ form.state }}
+            {{ form.state.errors }}
+        </div>
+        <div class="form-group">
+            <label for="id_zip_pin_code">Pin Code:</label>
+            {{ form.zip_pin_code }}
+            {{ form.zip_pin_code.errors }}
+        </div>
+        <div class="form-group">
+            <label for="id_password">Password:</label>
+            {{ form.password }}
+            {{ form.password.errors }}
+        </div>
+        <button type="submit" class="join-button">Join Us</button>
+    </form>
+    <p class="rloginp">Already have an account? Please <a href="{% url 'login' %}" class="ralogin-link">Login</a></p>
+</div>
  </section>
+ {% if messages %}
+ <div class="alert">
+     {% for message in messages %}
+         <div class="alert-message">{{ message }}</div>
+     {% endfor %}
+ </div>
+{% endif %}
+
  {% endblock  %}
 
 
