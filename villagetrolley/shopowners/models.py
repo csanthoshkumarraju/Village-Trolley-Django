@@ -45,7 +45,7 @@ class Shop_Owner_Registartion(models.Model):
         unique=True
         )
       
-    phone_number = models.IntegerField(
+    phone_number = models.CharField(
             max_length=10,  
             validators=[
                 MinLengthValidator(10, message=_('Phone number must be at least 10 digits.')),
